@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method="get" action="Test12_01.html">
+	<!-- 라디오박스 -->
+	<input type ="radio" name="gen" value="M"><label>남자</label>
+		<input type ="radio" name="gen" value="F"><label>여자</label><br>
+		<!-- 체크박스 -->
+			<input type ="checkbox" name="subj" value="java"><label>자바</label><br>
+			<input type ="checkbox" name="subj" value="oracle"><label>오라클</label><br>
+			<input type ="checkbox" name="subj" value="web"checked><label>웹</label><br>
+			<input type ="checkbox" name="subj" value="jsp"><label>제이에스피</label><br>
+			<input type ="checkbox" name="subj" value="spring"><label>스프링</label><br>
+			
+			
+		<select name="sub">
+		<!--  셀렉트박스를 사용해서 데이터를 선택해서 전송하는 입력태그
+			주의) 
+			option태그에 전송되는 데이터는 value속성값이 전송된다.
+			
+			
+			 -->
+			<option value="자바">java</option>
+			<option value="디비">db</option>
+			<option value="웹"selected>web</option>
+			<option value="제이에스피">jsp</option>
+			<option value="스프링">spring</option>
+		</select><br>
+			
+		<button type="submit">제출</button>
+		<input type="submit">
+	
+	</form>
+</body>
+</html>

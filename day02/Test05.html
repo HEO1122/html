@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--  
+		태그들을 가운데 정렬하는 방법
+		body태그에서 text-align속성의 값을 center로 주면된다.
+		
+		화면을 등분해서 처리하는 방법
+		
+		참고)
+			속성값으로 수치를 %로 사용하는 경우
+			 상위태그의 해당속성값을 100%로 계산해서 처리를 한다.
+	-->
+		<div style="display: inline-block; float:left; width: 20%; height:500px; "><p/></div>
+	<div style="display: inline-block; float:left; width: 60%; height:500px; background-color :orange"><p/></div>
+	<div style ="clear:both;width: 500px;">
+	<div style="display: inline-block; float:left; width: 20%; height:500px; "><p/></div>
+	<div style="display: inline-block; float:left; width: 60%; height:100px; background-color :violet; margin-top:50px;"><p/></div>
+	<!--  <div style="display: inline-block; float:left; width: 20%; height:500px; "><p/></div>-->
+	</div>
+</body>
+</html>

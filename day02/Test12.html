@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--
+	 아이디와 비밀번호를 입력해서 Test012_01.html  파일로 전송해보자
+	 => Test12_01.html 파일을 서버에게 요청을 할 때 아이디와 비밀번호를 같이 전달하면서
+	 요청하는 것이 된다.
+	 -->
+	 <form method="POST"action="Test12_01.html" style="text-align:center;">
+		 <div style ="display : inline-block;width: 240px; text-align:left;">
+		 	<label for="id" style="width: 100px; height:30px; display:inline-block; text-align:right;">
+		 	<!--  label  태그의 for 속성 
+		 		클릭했을 때 커서가 들어가야 할 태그를 선택하는 속성
+		 		속성값은 이동되어야할 입력태그의 아이디 값을 쓴다.
+		 	 -->
+		 	I D : </label>
+		 	<input type="text" name="id" id="id" style=" height:30px; margin-left: 10px;"placeholder="아이디를 입력하세요">
+		 	<!-- readonly 입력태그를 읽기 전용으로 만들어주는 속성 데이터 전송가능
+		 		diabled 사용못하도록 막는 속성 데이터 전달도 안된다.
+		 		value 입력태그의 데이터를 강제로 입력하는 속성
+		 		
+		 		placeholder 속성 : 입력태그에 알림메시지를 입력하는 속성
+		 		
+		 		
+		 		참고) 입력ㅌ그가 아닌 일반 태그에는 name속성을 줄 수 없다.
+		 		 -->
+		 </div>
+		  <div style ="display: inline-block;width: 240px; text-align:left;">
+		 	<label for="pw" style="width: 100px; height:30px; display:inline-block; text-align:right;">
+		 	P W : </label>
+		 	<input type="password" name="pw" id="pw" style=" height:30px; margin-left: 10px;"placeholder ="비번입력">
+		 	<label for="pw" style="width: 100px; height:30px; display:inline-block; text-align:right;">	게시글 : </label>
+		 	<textarea name="body" id="body" cols="42" rows="10" style='resize: none'> </textarea>
+		<!--  textarea
+		=> 여러줄의 텍스트를 입력받는 태그
+			속성) name 
+			cols: 입력받을 수 있는 줄 수
+			rows : 입력받을 수 잇는 화면에 보여지는 행 갯수
+		 -->
+		
+		 </div><br>
+		 <div style="width:220px;">
+		 	<input type ="button" style="width: 150px; height: 30px;" value= "취소">
+		 	<input type="submit" style="width : 150px; height:30px;">
+		 	<!-- 
+		 	type="submit"
+		 	> 버튼 중 제출하는 기능의 버튼.
+		 	감싸고 있는 form태그에 정의된 action 속성값으로 이동한다.
+		 	 -->
+	 </form>
+	 <form method="get" action ="Test12_01.html">
+	 <!--  submit 태그는 감싸고 있는 form태그에 정의된 action 속성값이로 이동한다. 자신을 감싸는 form 태그를 전송한다.
+	  -->
+	 </form>
+</body>
+</html>
