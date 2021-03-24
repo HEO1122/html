@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.outline{
+	display: inline-block;
+	width:750px;
+	height:922px;
+	text-align: center;
+
+}
+.group{
+	display: inline-block;
+	width: 750px;
+	height :83px;
+}
+
+.grouptitle{
+	display: inline-block;
+	width:750px;;
+	height:34px;
+	padding:0px 0px 17px;
+}
+.maincategory{
+	dispaly: inline-block;
+	width:750px;
+	height:49px;
+	border: 1px solid grey;
+}
+.m1{
+	width:92px;
+	height:49px;
+	border-right: 1px solid grey;
+}
+.m2{
+	width:94px;
+	height:49px;
+	border-right: 1px solid grey;
+}
